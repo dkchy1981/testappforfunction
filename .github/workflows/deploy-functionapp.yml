@@ -30,6 +30,6 @@ jobs:
     - name: Deploy to Azure Function App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: functionapp1-ejh3c7febubcevfg.scm.ukwest-01.azurewebsites.net:443
+        app-name: functionapp1-ejh3c7febubcevfg
         publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
         package: ./publish
