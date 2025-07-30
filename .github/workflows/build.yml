@@ -22,10 +22,10 @@ jobs:
         dotnet-version: '8.0.x' # or your target version
 
     - name: Restore dependencies
-      run: dotnet restore /TestFApp1/TestFApp1.sln
+      run: dotnet restore ./testappforfunction/TestFApp1/TestFApp1.sln
 
     - name: Build
-      run: dotnet build /TestFApp1/TestFApp1.sln --configuration Release --no-restore
+      run: dotnet build ./testappforfunction/TestFApp1/TestFApp1.sln --configuration Release --no-restore
 
     - name: Run tests
-      run: dotnet test /TestFApp1/TestFApp1.sln --no-build --verbosity normal
+      run: dotnet test ./testappforfunction/TestFApp1/TestFApp1.sln --no-build --verbosity normal
