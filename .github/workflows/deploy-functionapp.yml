@@ -31,5 +31,6 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: functionapp1
+        slot-name: staging  # or production if you're using slots
         publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
         package: ./publish
